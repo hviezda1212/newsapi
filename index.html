@@ -17,13 +17,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="side-menu" id="sideNav">
+      <button class="closebtn" onclick="closeNav()">&times;</button>
+      <div class="side-menu-list" id="menu-list">
+        <button>News</button>
+        <button>Sports</button>
+        <button>Business</button>
+        <button>Opinion</button>
+        <button>Living</button>
+        <button>Entertainment</button>
+        <button>Obits</button>
+        <button>Events</button>
+        <button>Classifieds</button>
+        <button>Best Of</button>
+        <button>Puzzmo</button>
+      </div>
+  </div>
+
     <section class="container">
       <section>
         <div class="pageHeader-wrapper">
-          <span
-            class="pageHeader-logo"
-            role="img"
-          ></span>
+          <div>
+            <i class="fas fa-bars hide icon-button" onclick="openNav()"></i>
+            <i class="fas fa-search icon-button" onclick="openSearchBox()"></i>
+            <span id="input-area">
+              <input type="text" id="search-input" placeholder="search" />
+              <button class="search-button" onclick="searchNews()">Go</button>
+            </span>
+          </div>
+          <div class="pageHeader-logo">
+            <img src="./asset/images/logo.svg" />
+          </div>
         </div>
         <div class="menus">
           <button>News</button>
@@ -39,7 +63,7 @@
           <button>Puzzmo</button>
         </div>
       </section>
-      <section id ="news-board">
+      <section id="news-board">
         <div class="row news">
           <div class="col-lg-4">
             <img class="news-img" src="" />
@@ -51,8 +75,6 @@
           </div>
         </div>
       </section>
-
-      
     </section>
 
     <script
@@ -60,6 +82,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
