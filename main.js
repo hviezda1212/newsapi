@@ -21,8 +21,9 @@ const render = () => {
     <div>${news.source.name} * ${news.publishedAt}</div>
   </div>
 </div>`
-  );
+  ).join("");
 
+  console.log("html",newsHTML)
   document.getElementById("news-board").innerHTML = newsHTML;
 };
 
