@@ -10,6 +10,9 @@ menus.forEach((menu) =>
   menu.addEventListener("click", (event) => getNewsByCategory(event))
 );
 
+let logo = document.querySelector(".pageHeader-logo");
+logo.addEventListener("click", () => getLatestNews());
+
 let userInput = document.getElementById("search-input");
 userInput.addEventListener("keydown", (event) => {
   if (event.keyCode === 13) {
@@ -105,4 +108,4 @@ const closeNav = () => {
   document.getElementById("sideNav").style.width = "0";
 };
 
-getNews();
+getLatestNews();
