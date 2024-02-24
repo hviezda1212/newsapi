@@ -131,6 +131,22 @@ html {
   display: none;
 }
 
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  margin-top: 1.5em;
+}
+.page-item.active .page-link{
+    background-color: #468cae;
+    color: white;
+    border-color: #468cae;
+}
+.page-link{
+    color:#468cae;
+}
+
 @media screen and (max-width: 63rem) {
   .pageHeader--logo {
     left: 50%;
